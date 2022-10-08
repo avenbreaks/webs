@@ -105,12 +105,12 @@ const EcosystemPage = (props) => {
                                         <button className="nav-link" id="nav-contracts-tab" data-bs-toggle="tab"
                                             onClick={() => toggleNav()}
                                             data-bs-target="#nav-contracts" type="button" role="tab"
-                                            aria-controls="nav-contracts" aria-selected="false">Contracts
+                                            aria-controls="nav-contracts" aria-selected="false">DeFi
                                         </button>
-                                        <button className="nav-link" id="nav-tools-tab" data-bs-toggle="tab"
+                                        <button className="nav-link" id="nav-wallet-tab" data-bs-toggle="tab"
                                             onClick={() => toggleNav()}
-                                            data-bs-target="#nav-tools" type="button" role="tab"
-                                            aria-controls="nav-tools" aria-selected="false">Tools
+                                            data-bs-target="#nav-wallet" type="button" role="tab"
+                                            aria-controls="nav-wallet" aria-selected="false">Wallet
                                         </button>
                                         <button className="nav-link" id="nav-dao-tab" data-bs-toggle="tab"
                                             onClick={() => toggleNav()}

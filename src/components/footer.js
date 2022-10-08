@@ -15,17 +15,6 @@ const Footer = () => {
     return (
         <footer>
             <div className={'video-container'}>
-                <div className={'video-wrapper'}>
-                    <div className={'video-bg'}/>
-                    <video autoPlay={true} loop={true} preload={'none'} playsInline={true} muted={true}>
-                        {isSafari &&
-                            <source src={FooterVideoMov} type='video/mp4;codecs="hvc1"'/>
-                        }
-                        {!isSafari &&
-                            <source src={FooterVideo} type="video/webm" />
-                        }
-                    </video>
-                </div>
             </div>
             <div className={'container'}>
                 <div className={'row'}>
@@ -41,7 +30,7 @@ const Footer = () => {
                                     <li><a href={menu.github} target={'_blank'} rel={'noreferrer'}>Github</a></li>
                                     <li><Link to={menu.ecosystem}>Ecosystem</Link></li>
                                     <li><a href={menu.whitepaper} target={'_blank'} rel={'noreferrer'}>Whitepaper</a></li>
-                                    <li><a href={menu.github} target={'_blank'} rel={'noreferrer'}>Media Kit</a></li>
+                                    <li><a href={menu.mediakit} target={'_blank'} rel={'noreferrer'}>Media Kit</a></li>
 
                                 </ul>
                             </div>
@@ -53,16 +42,16 @@ const Footer = () => {
                                 <li><a href={menu.twitter} target={'_blank'} rel={'noreferrer'}>Twitter</a></li>
                                 <li><a href={menu.telegram} target={'_blank'} rel={'noreferrer'}>Telegram</a></li>
                                 <li><a href={menu.discord} target={'_blank'} rel={'noreferrer'}>Discord</a></li>
-                                <li><a href={menu.github} target={'_blank'} rel={'noreferrer'}>Instagram</a></li>
+                                <li><a href={menu.instagram} target={'_blank'} rel={'noreferrer'}>Instagram</a></li>
                                 </ul>
                             </div>
                             <div className={'col-12 col-sm-6 col-md-3 pb-4'}>
                                 <legend>Ecosystem</legend>
 
                                 <ul>
-                                <li><Link to={menu.ecosystem+'#dapp'} state={{category:'dapp'}} target={'_blank'} rel={'noreferrer'}>Neware Contracts</Link></li>
-                                    <li><Link to={menu.ecosystem+'#contracts'} state={{category:'contracts'}} target={'_blank'} rel={'noreferrer'}>EVM Contracts</Link></li>
-                                    <li><Link to={menu.ecosystem+'#tools'} state={{category:'tools'}} target={'_blank'} rel={'noreferrer'}>Wallet</Link></li>
+                                <li><Link to={menu.ecosystem+''} state={{category:'dapp'}} target={'_blank'} rel={'noreferrer'}>Neware Contracts</Link></li>
+                                    <li><Link to={menu.ecosystem+''} state={{category:'contracts'}} target={'_blank'} rel={'noreferrer'}>EVM Contracts</Link></li>
+                                    <li><Link to={menu.ecosystem+'#wallet'} state={{category:'wallet'}} target={'_blank'} rel={'noreferrer'}>Wallet</Link></li>
                                     <li><Link to={menu.ecosystem+'#contracts'} state={{category:'contracts'}} target={'_blank'} rel={'noreferrer'}>Tools</Link></li>
                                     <li><Link to={menu.ecosystem+'#contracts'} state={{category:'contracts'}} target={'_blank'} rel={'noreferrer'}>DeFi</Link></li>
                                 </ul>
@@ -73,9 +62,9 @@ const Footer = () => {
                                 <ul>
                                 <li><a href={menu.coingecko} target={'_blank'} rel={'noreferrer'}>CoinMarketCap</a></li>
                                     <li><a href={menu.explorer1} target={'_blank'} rel={'noreferrer'}>Nomics</a></li>
-                                    <li><a href={menu.explorer1} target={'_blank'} rel={'noreferrer'}>Recent Coin</a></li>
-                                    <li><a href={menu.explorer1} target={'_blank'} rel={'noreferrer'}>Coin Brain</a></li>
-                                    <li><a href={menu.explorer2} target={'_blank'} rel={'noreferrer'}>Blockscout</a></li>
+                                    <li><a href={menu.explorer2} target={'_blank'} rel={'noreferrer'}>Recent Coin</a></li>
+                                    <li><a href={menu.explorer3} target={'_blank'} rel={'noreferrer'}>Coin Brain</a></li>
+                                    <li><a href={menu.explorer4} target={'_blank'} rel={'noreferrer'}>GishoScan</a></li>
                                 </ul>
                             </div>
                         </div>

@@ -15,8 +15,8 @@
   "start-searching": "/start-searching",
   "telegram": "https://t.me/gitshocks",
   "twitter": "https://twitter.com/gitshock",
-  "coingecko": "",
-  "coinmarketcap": "https://coinmarketcap.com/currencies/gitshock-finance/",
+  "coingecko": "https://coinmarketcap.com/currencies/gitshock-finance/",
+  "coinmarketcap": "",
   "onchain": "/onchain",
   "cosmostation": "https://gitshock.com",
   "cosmostation-use": "",
@@ -28,8 +28,12 @@
   "onchain1": "https://monitor.bronbro.io/d/juno-stats",
   "onchain2": "https://juno-stats.blockpane.com/network.html",
   "contract-data": "https://www.mintscan.io/juno/wasm",
-  "explorer1": "https://scan.gitshock.com",
-  "explorer2": "https://scan.gitshock.com",
-  "daolink": "https://daodao.zone",
-  "whitepaper": "https://gitshock.gitbook.io/gitshock-whitepaper"
+  "explorer1": "https://nomics.com/assets/gtfx-gitshock-finance",
+  "explorer2": "https://nomics.com/assets/gtfx-gitshock-finance",
+  "explorer3": "https://recentcoin.com/token/gitshock-finance-gtfx-0xb9c758ab",
+  "explorer4": "https://scan.gitshock.com",
+  "daolink": "",
+  "whitepaper": "https://gitshock.gitbook.io/gitshock-whitepaper",
+  "instagram": "https://www.instagram.com/gitshock_finance/",
+  "mediakit": "https://drive.google.com/drive/folders/1PemSY5qJZt_g0-xRoKkQR_OWrTr77FZA?usp=sharing"
 }

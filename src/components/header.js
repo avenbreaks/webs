@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
- 
+import dropmenu from "../style/dropdowns.module.css";
+
 const menu = require('../contents/urls.json');
 
 class Header extends React.Component {
@@ -11,7 +12,7 @@ class Header extends React.Component {
         };
     }
 
-    
+
     componentDidMount() {
         window.addEventListener("scroll", this.toggleHeaderClass);
         this.toggleHeaderClass();
@@ -74,7 +75,7 @@ class Header extends React.Component {
                             <li><a href={menu.blog} target={'_blank'} rel={'noreferrer'}>Blog</a></li>
                             <li><a href={menu.updates} target={'_blank'} rel={'noreferrer'}>Learn</a></li>
                             <li><Link to={menu.grants}>About Us</Link></li>
-                            <li><Link to={menu.grants}>Buy GTFX</Link></li>
+                            <li><Link className={this.state.menuOpen}>Buy GTFX</Link></li>
                         </ul>
                     </nav>
                 </div>
