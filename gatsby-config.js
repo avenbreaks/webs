@@ -48,6 +48,8 @@ module.exports = {
             offset: -100,
             duration: 300
         }
-    }
+    },
+    { resolve: "gatsby-plugin-sentry", 
+    options: { dsn: process.env.SENTRY_DSN } },
     ]
 };
