@@ -75,7 +75,7 @@ class Header extends React.Component {
                             <li><a href={menu.blog} target={'_blank'} rel={'noreferrer'}>Blog</a></li>
                             <li><a href={menu.updates} target={'_blank'} rel={'noreferrer'}>Learn</a></li>
                             <li><Link to={menu.grants}>About Us</Link></li>
-                            <li><Link className={this.state.menuOpen}>Buy GTFX</Link></li>
+                            <li><a href={menu.buytoken} target={'_blank'} rel={'noreferrer'}>Buy GTFX</a></li>
                         </ul>
                     </nav>
                 </div>

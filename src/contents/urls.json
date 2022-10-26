@@ -7,6 +7,7 @@
   "get-started": "https://gitshock.gitbook.io/gitshock-finance/",
   "ecosystem": "/ecosystem",
   "grants": "/about",
+  "buytoken": "https://www.notion.so/gitshock-finance/Token-Sales-ad22ff21556148c182a3d337751452e2",
   "hacks-and-bounties": "https://medium.com/@Gitshockfinance",
   "cosmwasm": "https://gitshock.gitbook.io/gitshock-finance/",
   "junoswap": "https://swap.gitshock.com",
@@ -33,7 +34,7 @@
   "explorer3": "https://recentcoin.com/token/gitshock-finance-gtfx-0xb9c758ab",
   "explorer4": "https://scan.gitshock.com",
   "daolink": "",
-  "whitepaper": "https://gitshock.gitbook.io/gitshock-whitepaper",
+  "whitepaper": "https://gitshock.s3.ap-southeast-1.amazonaws.com/docs/Whitepaper+3.0+(r.3.).pdf",
   "instagram": "https://www.instagram.com/gitshock_finance/",
   "mediakit": "https://drive.google.com/drive/folders/1PemSY5qJZt_g0-xRoKkQR_OWrTr77FZA?usp=sharing"
 }
