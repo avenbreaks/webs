@@ -115,11 +115,14 @@ const EcosystemPage = (props) => {
                                         )
                                     })}
                                 </div>
-                                <div className={'row mt-5'}>
-                                    <div className={'col-12'}>
-                                        <h6 className={'mb-2'}>Support Teams</h6>
-                                    </div>
-                                </div>
+                                <div className={'row justify-content-between'}>
+                            <div className={'col-auto'}>
+                                <h5 className={'mb-3 mb-lg-4 mb-xl-5'}
+                                    data-sal="fade"
+                                    data-sal-delay="200"
+                                    data-sal-duration="1000"></h5>
+                            </div>
+                        </div>
 
                                 <div className={'row'}>
                                     {ecosystems.map((ecosystem, index) => {
@@ -154,7 +157,7 @@ const EcosystemPage = (props) => {
                                 aria-labelledby="nav-contracts-tab">
                                 <div className={'row mt-5'}>
                                     <div className={'col-12'}>
-                                        <h6 className={'mb-2'}>Contracts</h6>
+                                        <h6 className={'mb-2'}>Wallet</h6>
                                     </div>
                                 </div>
                                 <div className={'row'}>
@@ -221,7 +224,7 @@ const EcosystemPage = (props) => {
                                     })}
                                     {!hasSoon &&
                                         <div className={'text-box'} data-sal="fade">
-                                            Have an ongoing project coming up on Juno? Let us know. <a className={'p-1'} href={'https://github.com/CosmosContracts/website/pulls'} target={'_blank'} rel={'noreferrer'}><i className={'icon-social-github'} aria-label={'Github'}></i></a>
+                                            Have an ongoing project coming up on Gitshock? Let us know. <a className={'p-1'} href={'https://github.com/gitshock-labs/'} target={'_blank'} rel={'noreferrer'}><i className={'icon-social-github'} aria-label={'Github'}></i></a>
                                         </div>
                                     }
                                 </div>

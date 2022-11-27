@@ -4,10 +4,10 @@ require("dotenv").config({
 
 module.exports = {
     siteMetadata: {
-        title: `Juno`,
-        siteUrl: `https://junonetwork.io`
+        title: `Gitshock Finance`,
+        siteUrl: `https://gitshock.com`
     },
-    plugins: ["gatsby-plugin-sass", "gatsby-plugin-scroll-reveal", "gatsby-plugin-image", "gatsby-plugin-react-helmet", "gatsby-plugin-sitemap", {
+    plugins: ["gatsby-plugin-sass", "gatsby-plugin-scroll-reveal", "gatsby-plugin-image", "gatsby-plugin-react-helmet", "gatsby-plugin-sitemap", 'gatsby-plugin-social-cards', {
         resolve: "gatsby-plugin-manifest",
         options: {
             icon: `./src/images/favicons/favicon-96x96.png`, // This path is relative to the root of the site.

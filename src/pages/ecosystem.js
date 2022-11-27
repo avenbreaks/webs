@@ -102,9 +102,9 @@ const EcosystemPage = (props) => {
                                             data-bs-toggle="tab" data-bs-target="#nav-dapp" type="button"
                                             role="tab" aria-controls="nav-dapp" aria-selected="true">Dapp
                                         </button>
-                                        <button className="nav-link" id="nav-contracts-tab" data-bs-toggle="tab"
+                                        <button className="nav-link" id="nav-defi-tab" data-bs-toggle="tab"
                                             onClick={() => toggleNav()}
-                                            data-bs-target="#nav-contracts" type="button" role="tab"
+                                            data-bs-target="#nav-defi" type="button" role="tab"
                                             aria-controls="nav-contracts" aria-selected="false">DeFi
                                         </button>
                                         <button className="nav-link" id="nav-wallet-tab" data-bs-toggle="tab"
@@ -112,12 +112,22 @@ const EcosystemPage = (props) => {
                                             data-bs-target="#nav-wallet" type="button" role="tab"
                                             aria-controls="nav-wallet" aria-selected="false">Wallet
                                         </button>
+                                        <button className="nav-link" id="nav-nft-tab" data-bs-toggle="tab"
+                                            onClick={() => toggleNav()}
+                                            data-bs-target="#nav-nft" type="button" role="tab"
+                                            aria-controls="nav-soon" aria-selected="false">NFT
+                                        </button>
                                         <button className="nav-link" id="nav-dao-tab" data-bs-toggle="tab"
                                             onClick={() => toggleNav()}
                                             data-bs-target="#nav-dao" type="button" role="tab"
                                             aria-controls="nav-dao" aria-selected="false">Dao
                                         </button>
-                                        <button className="nav-link" id="nav-dao-tab" data-bs-toggle="tab"
+                                        <button className="nav-link" id="nav-tools-tab" data-bs-toggle="tab"
+                                            onClick={() => toggleNav()}
+                                            data-bs-target="#nav-tools" type="button" role="tab"
+                                            aria-controls="nav-soon" aria-selected="false">Tools
+                                        </button>
+                                        <button className="nav-link" id="nav-soon-tab" data-bs-toggle="tab"
                                             onClick={() => toggleNav()}
                                             data-bs-target="#nav-soon" type="button" role="tab"
                                             aria-controls="nav-soon" aria-selected="false">Soon
@@ -145,7 +155,7 @@ const EcosystemPage = (props) => {
                                 </div>
                                 <div className={'row mt-5'}>
                                     <div className={'col-12'}>
-                                        <h6 className={'mb-2'}>All Ecosystems, Coming Soon</h6>
+                                        <h6 className={'mb-2'}>All Ecosystems</h6>
                                     </div>
                                 </div>
 
@@ -178,19 +188,73 @@ const EcosystemPage = (props) => {
                                 </div>
                             </div>
 
-                            <div className="tab-pane fade" id="nav-contracts" role="tabpanel"
-                                aria-labelledby="nav-contracts-tab">
+                            <div className="tab-pane fade" id="nav-defi" role="tabpanel"
+                                aria-labelledby="nav-defi-tab">
                                 <div className={'row mt-5'}>
                                     <div className={'col-12'}>
-                                        <h6 className={'mb-2'}>Contracts</h6>
+                                        <h6 className={'mb-2'}>DeFi</h6>
                                     </div>
                                 </div>
                                 <div className={'row'}>
                                     {ecosystems.map((ecosystem, index) => {
                                         return (
-                                            ecosystem.category === 'Contract' && (<div key={index} className={'col-6 col-md-3 p-2'}>
+                                            ecosystem.category === 'DeFi' && (<div key={index} className={'col-6 col-md-3 p-2'}>
                                                 <Ecosystem ecosystem={ecosystem} />
                                             </div>)
+                                        )
+                                    })}
+                                </div>
+                            </div>
+
+                            <div className="tab-pane fade" id="nav-wallet" role="tabpanel"
+                                aria-labelledby="nav-wallet-tab">
+                                <div className={'row mt-5'}>
+                                    <div className={'col-12'}>
+                                        <h6 className={'mb-2'}>Wallet</h6>
+                                    </div>
+                                </div>
+                                <div className={'row'}>
+                                    {ecosystems.map((ecosystem, index) => {
+                                        return (
+                                            ecosystem.category === 'Wallet' && (<div key={index} className={'col-6 col-md-3 p-2'}>
+                                                <Ecosystem ecosystem={ecosystem} />
+                                            </div>)
+                                        )
+                                    })}
+                                </div>
+                            </div>
+
+                            <div className="tab-pane fade" id="nav-nft" role="tabpanel"
+                                aria-labelledby="nav-nft-tab">
+                                <div className={'row mt-5'}>
+                                    <div className={'col-12'}>
+                                        <h6 className={'mb-2'}>Non-Fungible Tokens</h6>
+                                    </div>
+                                </div>
+                                <div className={'row'}>
+                                    {ecosystems.map((ecosystem, index) => {
+                                        return (
+                                            ecosystem.category === 'NFT' && (<div key={index} className={'col-6 col-md-3 p-2'}>
+                                                <Ecosystem ecosystem={ecosystem} />
+                                            </div>)
+                                        )
+                                    })}
+                                </div>
+                            </div>
+
+                            <div className="tab-pane fade" id="nav-dao" role="tabpanel"
+                                aria-labelledby="nav-dao-tab">
+                                <div className={'row mt-5'}>
+                                    <div className={'col-12'}>
+                                        <h6 className={'mb-2'}>Dao</h6>
+                                    </div>
+                                </div>
+                                <div className={'row'}>
+                                    {daos.map((dao, index) => {
+                                        return (
+                                            <div key={index} className={'col-6 col-md-3 p-2'}>
+                                                <Ecosystem ecosystem={dao} />
+                                            </div>
                                         )
                                     })}
                                 </div>
@@ -206,27 +270,9 @@ const EcosystemPage = (props) => {
                                 <div className={'row'}>
                                     {ecosystems.map((ecosystem, index) => {
                                         return (
-                                            ecosystem.category === 'Tool' && (<div key={index} className={'col-6 col-md-3 p-2'}>
+                                            ecosystem.category === 'Tools' && (<div key={index} className={'col-6 col-md-3 p-2'}>
                                                 <Ecosystem ecosystem={ecosystem} />
                                             </div>)
-                                        )
-                                    })}
-                                </div>
-                            </div>
-
-                            <div className="tab-pane fade" id="nav-dao" role="tabpanel"
-                                aria-labelledby="nav-dao-tab">
-                                <div className={'row mt-5'}>
-                                    <div className={'col-12'}>
-                                        <h6 className={'mb-2'}>DAOs</h6>
-                                    </div>
-                                </div>
-                                <div className={'row'}>
-                                    {daos.map((dao, index) => {
-                                        return (
-                                            <div key={index} className={'col-6 col-md-3 p-2'}>
-                                                <Ecosystem ecosystem={dao} />
-                                            </div>
                                         )
                                     })}
                                 </div>
@@ -249,7 +295,7 @@ const EcosystemPage = (props) => {
                                     })}
                                     {!hasSoon &&
                                         <div className={'text-box'} data-sal="fade">
-                                            Have an ongoing project coming up on Juno? Let us know. <a className={'p-1'} href={'https://github.com/CosmosContracts/website/pulls'} target={'_blank'} rel={'noreferrer'}><i className={'icon-social-github'} aria-label={'Github'}></i></a>
+                                            Have an ongoing project coming up on Gitshock? Let us know. <a className={'p-1'} href={'https://github.com/gitshock-labs'} target={'_blank'} rel={'noreferrer'}><i className={'icon-social-github'} aria-label={'Github'}></i></a>
                                         </div>
                                     }
                                 </div>
