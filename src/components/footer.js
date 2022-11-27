@@ -64,7 +64,7 @@ const Footer = () => {
                                     <li><a href={menu.explorer1} target={'_blank'} rel={'noreferrer'}>Nomics</a></li>
                                     <li><a href={menu.explorer2} target={'_blank'} rel={'noreferrer'}>Recent Coin</a></li>
                                     <li><a href={menu.explorer3} target={'_blank'} rel={'noreferrer'}>Coin Brain</a></li>
-                                    <li><a href={menu.explorer4} target={'_blank'} rel={'noreferrer'}>GishoScan</a></li>
+                                    <li><a href={menu.explorer4} target={'_blank'} rel={'noreferrer'}>Gitshock Scan</a></li>
                                 </ul>
                             </div>
                         </div>
